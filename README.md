@@ -1,2 +1,2 @@
-# laravel-staf
-Laravel package untuk memanage staf
+# Laravel Staf
+Laravel package untuk mengolah data staf
