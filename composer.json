@@ -1,5 +1,5 @@
 {
-    "name": "bantenprov/laravel-staf",
+    "name": "bantenprov/staf",
     "description": "Repository untuk membuat atau melakukan proses data pegawai",
     "authors": [
         {
@@ -16,7 +16,7 @@
             "src/helpers/helpers.php"
         ],
         "psr-4": {
-            "Bantenprov\\LaravelStaf\\": "src/Bantenprov/LaravelStaf"
+            "Bantenprov\\Staf\\": "src/Bantenprov/Staf"
         }
     },
     "minimum-stability": "stable"
