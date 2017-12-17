@@ -16,7 +16,7 @@
             "src/helpers/helpers.php"
         ],
         "psr-4": {
-            "Bantenprov\\Staf\\": "src/Bantenprov/Staf"
+            "Bantenprov\\Staf\\": "src"
         }
     },
     "minimum-stability": "stable"
