@@ -15,9 +15,9 @@ class CreateStafTable extends Migration
     {
         Schema::create('staf', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('opd_id');
-            $table->string('full_name');
+            $table->string('full_name', 255);
+            $table->integer('user_id')->unique()->unsigned();
+            $table->integer('opd_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });
