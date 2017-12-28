@@ -3,13 +3,15 @@
     "description": "Repository untuk membuat atau melakukan proses data pegawai",
     "type": "library",
     "homepage": "https://github.com/bantenprov/staf",
+    "license": "MIT",
     "authors": [
         {
             "name": "bantenprov",
-            "email": "developer.bantenprov@gmail.com"
+            "email": "developer.bantenprov@gmail.com",
+            "homepage": "http://dev.bantenprov",
+            "role": "Developer"
         }
     ],
-    "licence": "MIT", 
     "require": {
         "php": ">=5.6.4",
         "illuminate/support": "5.4.*",
