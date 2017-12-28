@@ -1,6 +1,8 @@
 {
     "name": "bantenprov/staf",
     "description": "Repository untuk membuat atau melakukan proses data pegawai",
+    "type": "library",
+    "homepage": "https://github.com/bantenprov/staf",
     "authors": [
         {
             "name": "bantenprov",
