@@ -35,7 +35,7 @@ class Staf extends Model
 
     public function getOpd()
     {
-        return $this->hasOne('App\Opd','id','opd_id');
+        return $this->hasOne('Bantenprov\LaravelOpd\Models\LaravelOpdModel','id','opd_id');
     }
 
     public function getProject()
@@ -48,3 +48,4 @@ class Staf extends Model
         return $this->belongsTo(config('staf.models.member'),'member_id','id');
     }
 }
+

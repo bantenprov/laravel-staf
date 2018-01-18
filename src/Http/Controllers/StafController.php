@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use Bantenprov\Staf\Facades\Staf;
 use Bantenprov\Staf\Models\Staf as StafModel;
 use Bantenprov\Member\Models\Member; 
-use App\Opd;
+//use App\Opd;
 use App\User;
 use Validator;
 /**
@@ -24,7 +24,8 @@ class StafController extends Controller
     public function __construct()
     {
         $this->stafModel = new StafModel;
-        $this->opdModel = new Opd;
+        //$this->opdModel = \Opd::index()->get();
+        $this->opdModel = new \Bantenprov\LaravelOpd\Models\LaravelOpdModel;
         $this->userModel = new User;
         $this->memberModel = new Member;
     }
@@ -159,3 +160,4 @@ class StafController extends Controller
         return Staf::welcome();
     }
 }
+
