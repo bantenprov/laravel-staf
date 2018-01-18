@@ -27,7 +27,7 @@ class StafServiceProvider extends ServiceProvider
     public function boot()
     {
         // Bootstrap handles
-        $this->routeHandle();
+        //$this->routeHandle();
         $this->configHandle();
         $this->langHandle();
         $this->viewHandle();
@@ -121,8 +121,8 @@ class StafServiceProvider extends ServiceProvider
         $this->loadViewsFrom($packageViewsPath, 'staf');
 
         $this->publishes([
-            $packageViewsPath => resource_path('views/vendor/staf'),
-        ], 'views');
+            $packageViewsPath => resource_path('views/vendor'),
+        ], 'staf-views');
     }
 
     /**
@@ -155,3 +155,4 @@ class StafServiceProvider extends ServiceProvider
         ], 'migrations');
     }
 }
+
